@@ -1,28 +1,28 @@
 /**
  * Topic: Functions
- * Instructions: in problem1 the issue is with the declaration of function exmpl
- *               in problem2 the issue is with the invalid use of function exmpl
+ * Instructions: Resolve the following issues:
+ * Problem 1: the declaration of function exmpl will raise a SyntaxError exception.
+ * Problem 2: the function call to exmpl will evaluate as NaN.
  *
  * Relevant resource:
  * - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
  */
 
 function problem1(){
-  function exmpl(var x, var y)
+  function sum(var x, var y)
   {
-  	return x+y;
+    return x+y;
   }
 }
 
 function problem2(){
-   function exmpl(x, y, z)
+  function multiplication(x, y, z)
   {
-  	return x*y*z;
+    return x*y*z;
   }
-
-  	var a = 5;
-  	var b = 4;
-  	console.log(exmpl(a, b));
+  const a = 5;
+  const b = 4;
+  console.log(multiplication(a, b));
 }
 
 /**
@@ -30,11 +30,10 @@ function problem2(){
  * Solution - below is a base64 blob of the solution.
  *
 --begin--
-
-  ZnVuY3Rpb24gcHJvYmxlbTEoKXsKICBmdW5jdGlvbiBleG1wbCh4LCB5KQogIHsKICByZXR1cm4g
-eCt5OwogIH0KfQo= ZnVuY3Rpb24gcHJvYmxlbTIoKXsKICAgZnVuY3Rpb24gZXhtcGwoeCwgeSwgeiwpCiAgewogIHJl
-dHVybiB4KnkqejsKICB9CiAgCiAgdmFyIGEgPSA1OwogIHZhciBiID0gNDsKICBjb25zb2xlLmxv
-ZyhleG1wbChhLCBiKSk7Cn0K
-
+ZnVuY3Rpb24gcHJvYmxlbTEoKXsKICBmdW5jdGlvbiBzdW0oeCwgeSkKICB7CiAgICByZXR1cm4g
+eCt5OwogIH0KfQoKZnVuY3Rpb24gcHJvYmxlbTIoKXsKICBmdW5jdGlvbiBtdWx0aXBsaWNhdGlv
+bih4LCB5LCB6KQogIHsKICAgIHJldHVybiB4KnkqejsKICB9CiAgICBjb25zdCBhID0gNTsKICAg
+IGNvbnN0IGIgPSA0OwogICAgY29uc3QgYyA9IDM7CiAgICBjb25zb2xlLmxvZyhtdWx0aXBsaWNh
+dGlvbihhLCBiLCBjKSk7Cn0K
 --end--
  */
